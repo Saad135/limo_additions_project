@@ -17,8 +17,31 @@ setup(
             glob("launch/*launch.[pxy][yma]*"),
         ),
         (os.path.join("share", package_name, "rviz"), glob("rviz/*.rviz")),
+        (
+            os.path.join("share", package_name, "models", "box1"),
+            [
+                filepath
+                for filepath in glob("urdf/box1/*", recursive=True)
+                if os.path.isfile(filepath)
+            ],
+        ),
+        (
+            os.path.join("share", package_name, "models", "limo_four_diff"),
+            [
+                filepath
+                for filepath in glob("urdf/limo_four_diff/*", recursive=True)
+                if os.path.isfile(filepath)
+            ],
+        ),
+        (
+            os.path.join("share", package_name, "models", "limo_four_diff", "meshes"),
+            [
+                filepath
+                for filepath in glob("urdf/limo_four_diff/meshes/*", recursive=True)
+                if os.path.isfile(filepath)
+            ],
+        ),
         (os.path.join("share", package_name, "world"), glob("world/*.world")),
-        (os.path.join("share", package_name, "models"), glob("urdf/**")),
     ],
     install_requires=["setuptools"],
     zip_safe=True,
