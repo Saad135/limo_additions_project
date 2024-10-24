@@ -113,7 +113,7 @@
             <argument>limo_camera/points:=limo_camera/camera_points</argument>
           </ros>
           <camera_name>depth_camera_link</camera_name>
-          <frame_name>depth_camera_link</frame_name>
+          <frame_name>base_footprint</frame_name>
           <hack_baseline>0.07</hack_baseline>
           <min_depth>0.001</min_depth>
         </plugin>
@@ -188,7 +188,7 @@
         </imu>
         <plugin name='two_wheeled_robot_imu' filename='libgazebo_ros_imu_sensor.so'>
           <initial_orientation_as_reference>0</initial_orientation_as_reference>
-          <frame_name>imu_link</frame_name>
+          <frame_name>base_footprint</frame_name>
           <ros>
             <namespace>/imu</namespace>
             <remapping>~/out:=data</remapping>
@@ -225,7 +225,7 @@
             <remapping>~/out:=scan</remapping>
           </ros>
           <output_type>sensor_msgs/LaserScan</output_type>
-          <frame_name>laser_link</frame_name>
+          <frame_name>base_footprint</frame_name>
         </plugin>
         <pose>0.103 0 0.116 0 -0 0</pose>
       </sensor>
