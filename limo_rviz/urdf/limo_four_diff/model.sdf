@@ -82,8 +82,9 @@
         </geometry>
       </visual>
       <sensor name='sensor_camera' type='depth'>
-        <always_on>0</always_on>
-        <update_rate>1</update_rate>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>30</update_rate>
         <camera name='limo_camera'>
           <distortion>
             <k1>0.1</k1>
