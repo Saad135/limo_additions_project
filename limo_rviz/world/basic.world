@@ -228,7 +228,7 @@
           </surface>
         </collision>
         <collision name='base_footprint_fixed_joint_lump__depth_camera_collision_collision_1'>
-          <pose>0.084 0 0.45 0 -0 0</pose>
+          <pose>0.084 0 0.015 0 -0 0</pose>
           <geometry>
             <box>
               <size>0.02 0.06 0.015</size>
@@ -301,7 +301,7 @@
           </geometry>
         </visual>
         <visual name='base_footprint_fixed_joint_lump__depth_camera_visual_visual_1'>
-          <pose>0.084 0 0.45 0 -0 0</pose>
+          <pose>0.084 0 0.015 0 -0 0</pose>
           <geometry>
             <box>
               <size>0.02 0.06 0.015</size>
