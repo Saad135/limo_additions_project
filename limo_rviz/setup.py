@@ -17,6 +17,8 @@ setup(
             glob("launch/*launch.[pxy][yma]*"),
         ),
         (os.path.join("share", package_name, "rviz"), glob("rviz/*.rviz")),
+        (os.path.join("share", package_name, "world"), glob("world/*.world")),
+        (os.path.join("share", package_name, "models"), glob("urdf/**")),
     ],
     install_requires=["setuptools"],
     zip_safe=True,
