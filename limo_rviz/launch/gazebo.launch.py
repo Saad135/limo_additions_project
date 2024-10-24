@@ -29,7 +29,7 @@ def generate_launch_description():
 
     # Set the path to the world file
     world_file_name = "basic.world"
-    world_path = os.path.join(pkg_share, "worlds", world_file_name)
+    world_path = os.path.join(pkg_share, "world", world_file_name)
 
     # Set the path to the SDF model files.
     gazebo_models_path = os.path.join(pkg_share, "models")
