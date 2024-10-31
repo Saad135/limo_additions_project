@@ -28,7 +28,7 @@ def generate_launch_description():
     pkg_share = FindPackageShare(package="limo_rviz").find("limo_rviz")
 
     # Set the path to the world file
-    world_file_name = "basic.world"
+    world_file_name = "stage2.world"
     world_path = os.path.join(pkg_share, "world", world_file_name)
 
     # Set the path to the SDF model files.
