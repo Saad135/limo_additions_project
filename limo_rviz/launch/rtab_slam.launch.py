@@ -90,8 +90,9 @@ def generate_launch_description():
                 choices=["true", "false"],
                 description="Use simulation (Gazebo) clock if true",
             ),
+            # Qos 1 for reliable and 2 for Best effort
             DeclareLaunchArgument(
-                "qos", default_value="0", description="QoS used for input sensor topics"
+                "qos", default_value="1", description="QoS used for input sensor topics"
             ),
             DeclareLaunchArgument(
                 "localization",
